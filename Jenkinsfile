@@ -10,7 +10,7 @@ pipeline {
          stage('Fetching Source') {
             steps {
                 echo 'Fetching source from personal repository...'
-                git branch: 'main', credentialsId: 'Dmitrii-Iurev', url: 'git@github.com:Dmitrii-Iurev/calculator-app-finished.git'
+                git branch: 'main', credentialsId: 'github', url: 'git@github.com:Dmitrii-Iurev/calculator-app-finished.git'
             }
          }
 
